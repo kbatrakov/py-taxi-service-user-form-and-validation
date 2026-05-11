@@ -3,7 +3,7 @@
   <div class="d-flex justify-content-between align-items-center">
     <h1>Username: {{ driver.username }}</h1>
     <div class="d-flex flex-column">
-      <a href="{% url 'taxi:driver-license-update' pk=driver.id %}" class="btn btn-outline-primary">Update license</a>
+      <a href="{% url 'taxi:driver-update' pk=driver.id %}" class="btn btn-outline-primary">Update license</a>
       <br>
       <a href="{% url 'taxi:driver-delete' pk=driver.id %}" class="btn btn-outline-danger">Delete driver</a>
     </div>
